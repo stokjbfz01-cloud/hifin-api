@@ -8,7 +8,7 @@ export default function handler(req, res) {
   }
 
   const whatsappUrl =
-    "https://whatsapp.com/channel/ISI_ID_CHANNEL";
+    "https://whatsapp.com/channel/0029VbCCbN9AojYwc7gebK3D";
 
   return res.status(200).json({
     success: true,
