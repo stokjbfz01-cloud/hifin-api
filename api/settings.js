@@ -7,6 +7,10 @@ export default function handler(req, res) {
     });
   }
 
+  // Cache briefly at the Vercel edge; the app also keeps its own last-known URL.
+  res.setHeader("Cache-Control", "public, s-maxage=30, stale-while-revalidate=120");
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+
   const whatsappUrl =
     "https://whatsapp.com/channel/0029VbCCbN9AojYwc7gebK3D";
 
